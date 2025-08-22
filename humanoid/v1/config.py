@@ -6,7 +6,7 @@ class Config:
 
     # Unsupervised DADS pre-training
     # Humanoid benefits from longer training and larger networks
-    NUM_PRETRAIN_STEPS = 2_000_000
+    NUM_PRETRAIN_STEPS = 400_000
     REPLAY_BUFFER_CAPACITY = 1_000_000
     INITIAL_COLLECT_STEPS = 5_000
 
@@ -49,6 +49,8 @@ class Config:
     NUM_SKILLS_TO_PLOT = 10
     NUM_SKILLS_FOR_VARIANCE_PLOT = 4
     NUM_ROLLOUTS_PER_SKILL = 10
+    PLOT_INTERVAL = 10_000
+    ENABLE_CSV_LOG = False
 
     # Logging & eval
     EVAL_FREQUENCY = 5_000

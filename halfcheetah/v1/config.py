@@ -5,7 +5,7 @@ class Config:
     ENV_NAME = "HalfCheetah-v5"
 
     # Unsupervised DADS pre-training
-    NUM_PRETRAIN_STEPS = 800_000
+    NUM_PRETRAIN_STEPS = 200_000
     REPLAY_BUFFER_CAPACITY = 1_000_000
     INITIAL_COLLECT_STEPS = 5_000
 
@@ -53,6 +53,8 @@ class Config:
     EVAL_FREQUENCY = 5_000
     SKILL_DIVERSITY_EVAL_FREQUENCY = 10_000
     LOG_FREQUENCY = 100
+    PLOT_INTERVAL = 10_000
+    ENABLE_CSV_LOG = False
 
     # Device & paths
     DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
